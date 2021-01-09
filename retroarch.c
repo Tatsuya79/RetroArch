@@ -35086,6 +35086,8 @@ static void rarch_init_core_options_path(
       char *src_path, size_t src_len)
 {
    char *game_options_path        = NULL;
+   char *folder_options_path      = NULL;
+   
    settings_t *settings           = p_rarch->configuration_settings;
    bool game_specific_options     = settings->bools.game_specific_options;
 
