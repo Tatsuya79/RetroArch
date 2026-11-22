@@ -686,6 +686,8 @@ private slots:
    void onPlaylistFilesDropped(QStringList files);
    void onShaderParamsClicked();
    void onCoreOptionsClicked();
+   void onControlsClicked();
+   void onViewMenuAboutToShow();
    void onShowErrorMessage(QString msg);
    void onShowInfoMessage(QString msg);
    void onItemChanged();
@@ -797,6 +799,7 @@ private:
    QElapsedTimer m_statusMessageElapsedTimer;
    QPointer<ShaderParamsDialog> m_shaderParamsDialog;
    QPointer<CoreOptionsDialog> m_coreOptionsDialog;
+   QPointer<ControlsDialog> m_controlsDialog;
    bool m_downloadingPlaylistThumbnails;
 
 
